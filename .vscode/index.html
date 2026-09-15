@@ -2,228 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Денис Гобузов - Визитка</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: #1e1e2f;
-            line-height: 1.7;
-            background: #f8f9fc;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a2e, #2d2d44);
-            color: #fff;
-            padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-        nav {
-            display: flex;
-            gap: 30px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 8px 20px;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            background: rgba(255,255,255,0.15);
-            transform: translateY(-2px);
-        }
-        section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 10%;
-        }
-        section:nth-child(odd) {
-            background: #ffffff;
-        }
-        section:nth-child(even) {
-            background: #f8f9fc;
-        }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-        }
-        h2 {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 10px;
-            color: #1a1a2e;
-        }
-        .line {
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(135deg, #6c5ce7, #0984e3);
-            margin: 0 auto 50px;
-            border-radius: 4px;
-        }
-        .row {
-            display: flex;
-            align-items: center;
-            gap: 60px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .row.reverse {
-            flex-direction: row-reverse;
-        }
-        .row img {
-            width: 380px;
-            max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-            transition: 0.3s;
-        }
-        .row img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-        }
-        .text {
-            max-width: 500px;
-        }
-        .text h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #1a1a2e;
-        }
-        .text p {
-            font-size: 1.15rem;
-            margin-bottom: 12px;
-            color: #2d3436;
-        }
-        .text strong {
-            color: #0984e3;
-        }
-        .text ul {
-            list-style: none;
-            font-size: 1.1rem;
-        }
-        .text ul li {
-            padding: 12px 0;
-            border-bottom: 1px solid #e9ecef;
-        }
-        .text ul li:last-child {
-            border-bottom: none;
-        }
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        .tag {
-            background: linear-gradient(135deg, #6c5ce7, #0984e3);
-            color: #fff;
-            padding: 6px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        footer {
-            background: #1a1a2e;
-            color: #dfe6e9;
-            padding: 50px 10% 20px;
-        }
-        .footer-grid {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .footer-grid div {
-            flex: 1;
-            min-width: 150px;
-        }
-        .footer-grid h4 {
-            color: #a29bfe;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #a29bfe;
-            padding-bottom: 8px;
-            display: inline-block;
-        }
-        .footer-grid p {
-            margin-bottom: 6px;
-        }
-        .footer-grid a {
-            color: #dfe6e9;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .footer-grid a:hover {
-            color: #a29bfe;
-        }
-        .footer-bottom {
-            border-top: 1px solid #2d2d44;
-            padding-top: 20px;
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-                padding: 15px 5%;
-            }
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px;
-            }
-            h2 {
-                font-size: 2.2rem;
-            }
-            .row {
-                flex-direction: column !important;
-                gap: 30px;
-            }
-            .row img {
-                width: 100%;
-            }
-            .footer-grid {
-                flex-direction: column;
-                text-align: center;
-            }
-            .footer-grid h4 {
-                display: block;
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
+    <!-- ШАПКА -->
     <header>
-        <div class="logo">👨‍💻 Денис Гобузов</div>
+        <h1>👨‍💻 Денис Гобузов</h1>
         <nav>
             <a href="#about">Обо мне</a>
             <a href="#skills">Навыки</a>
@@ -232,109 +18,53 @@
         </nav>
     </header>
 
-    <!-- ===== СЕКЦИЯ 1: Обо мне ===== -->
+    <!-- ОБО МНЕ -->
     <section id="about">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <div class="line"></div>
-            <div class="row">
-                <!-- ТВОЯ КАРТИНКА 1 -->
-                <img src="images/foto1.jpg" alt="Денис Гобузов">
-                <div class="text">
-                    <h3>Привет! Я Денис Гобузов</h3>
-                    <p>Я живу в городе <strong>Ульяновск</strong> на улице <strong>Циолковского, дом 5</strong>.</p>
-                    <p>Мне 18 лет, я увлекаюсь веб-разработкой и создаю сайты на <strong>чистом HTML и CSS</strong>.</p>
-                    <p>Моя цель — стать профессиональным разработчиком.</p>
-                    <div class="tags">
-                        <span class="tag">📍 Ульяновск</span>
-                        <span class="tag">📞 8-927-811-06-23</span>
-                        <span class="tag">📧 denis@example.com</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h2>Обо мне</h2>
+        <img src="images/foto1.jpg" alt="Денис Гобузов">
+        <p><strong>Привет! Я Денис Гобузов.</strong></p>
+        <p>Живу в городе <strong>Ульяновск</strong>, улица <strong>Циолковского, дом 5</strong>.</p>
+        <p>Мне 18 лет. Увлекаюсь веб-разработкой и делаю сайты на <strong>HTML и CSS</strong>.</p>
+        <p>Моя цель — стать профессиональным разработчиком.</p>
     </section>
 
-    <!-- ===== СЕКЦИЯ 2: Навыки ===== -->
+    <!-- НАВЫКИ -->
     <section id="skills">
-        <div class="container">
-            <h2>Мои навыки</h2>
-            <div class="line"></div>
-            <div class="row reverse">
-                <div class="text">
-                    <h3>Что я умею</h3>
-                    <ul>
-                        <li><strong>HTML5</strong> — семантическая вёрстка</li>
-                        <li><strong>CSS3</strong> — Flexbox, Grid, адаптив</li>
-                        <li><strong>Git</strong> — контроль версий</li>
-                    </ul>
-                </div>
-                <!-- ТВОЯ КАРТИНКА 2 -->
-                <img src="images/foto2.jpg" alt="Навыки">
-            </div>
-        </div>
+        <h2>Мои навыки</h2>
+        <img src="images/foto2.jpg" alt="Навыки">
+        <ul>
+            <li><strong>HTML5</strong> — вёрстка страниц</li>
+            <li><strong>CSS3</strong> — оформление сайтов</li>
+            <li><strong>Git</strong> — контроль версий</li>
+        </ul>
     </section>
 
-    <!-- ===== СЕКЦИЯ 3: Портфолио ===== -->
+    <!-- ПОРТФОЛИО -->
     <section id="portfolio">
-        <div class="container">
-            <h2>Мои работы</h2>
-            <div class="line"></div>
-            <div class="row">
-                <!-- ТВОЯ КАРТИНКА 3 -->
-                <img src="images/foto3.jpg" alt="Проекты">
-                <div class="text">
-                    <h3>Мои проекты</h3>
-                    <ul>
-                        <li><strong>📄 Сайт-визитка</strong> — этот сайт</li>
-                        <li><strong>📅 Расписание</strong> — таблица занятий</li>
-                        <li><strong>📝 Мини-блог</strong> — заметки</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <h2>Мои работы</h2>
+        <img src="images/foto3.jpg" alt="Проекты">
+        <ul>
+            <li><strong>📄 Сайт-визитка</strong> — этот сайт</li>
+            <li><strong>📅 Расписание</strong> — таблица занятий</li>
+            <li><strong>📝 Мини-блог</strong> — заметки</li>
+        </ul>
     </section>
 
-    <!-- ===== СЕКЦИЯ 4: Контакты ===== -->
+    <!-- КОНТАКТЫ -->
     <section id="contacts">
-        <div class="container">
-            <h2>Связаться со мной</h2>
-            <div class="line"></div>
-            <div class="row">
-                <div class="text" style="max-width: 600px; text-align: center;">
-                    <p><strong>📞 Телефон:</strong> 8-927-811-06-23</p>
-                    <p><strong>📍 Адрес:</strong> Ульяновск, ул. Циолковского, д. 5</p>
-                    <div class="tags" style="justify-content: center;">
-                        <a href="https://github.com/sweete23214" target="_blank" class="tag" style="text-decoration: none;">GitHub</a>
-                        <a href="https://vk.ru/hakikarawqwq" target="_blank" class="tag" style="text-decoration: none;">ВКонтакте</a>
-                    </div>
-                </div>
-            </div>
+        <h2>Контакты</h2>
+        <p><strong>📞 Телефон:</strong> 8-927-811-06-23</p>
+        <p><strong>📍 Адрес:</strong> Ульяновск, ул. Циолковского, д. 5</p>
+        <p><strong>📧 Email:</strong> denis@example.com</p>
+        <div class="contact">
+            <a href="https://github.com/sweete23214" target="_blank">GitHub</a>
+            <a href="https://vk.ru/hakikarawqwq" target="_blank">ВКонтакте</a>
         </div>
     </section>
 
-    <!-- ===== ПОДВАЛ ===== -->
+    <!-- ПОДВАЛ -->
     <footer>
-        <div class="footer-grid">
-            <div>
-                <h4>📞 Контакты</h4>
-                <p>8-927-811-06-23</p>
-                <p>denis@example.com</p>
-            </div>
-            <div>
-                <h4>📍 Адрес</h4>
-                <p>Ульяновск</p>
-                <p>ул. Циолковского, д. 5</p>
-            </div>
-            <div>
-                <h4>🌐 Соцсети</h4>
-                <p><a href="https://github.com/sweete23214" target="_blank">GitHub</a></p>
-                <p><a href="https://vk.ru/hakikarawqwq" target="_blank">ВКонтакте</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Денис Гобузов | Ульяновск, ул. Циолковского, д. 5</p>
-        </div>
+        <p>© 2026 Денис Гобузов | Ульяновск, ул. Циолковского, д. 5</p>
     </footer>
 
 </body>
